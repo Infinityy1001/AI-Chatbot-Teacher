@@ -1,11 +1,17 @@
 import { pipeline } from 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.1.2';
 
 console.log("Loading model...");
+
+let device = 'webgpu';
+if (!navigator.gpu) {
+  console.warn("WebGPU not supported. Falling back to CPU.");
+  device = 'cpu'; // Utilisation du processeur comme fallback
+}
+
 const generator = await pipeline('text-generation', 'onnx-community/Llama-3.2-1B-Instruct-q4f16', {
-  device: 'webgpu',
+  device: device,
 });
 console.log("Model loaded");
-
 // Élément DOM
 const chatWindow = document.getElementById("chat-window");
 const questionInput = document.getElementById("user-input");
