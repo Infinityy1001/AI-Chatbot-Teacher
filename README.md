@@ -47,9 +47,6 @@ ai-chatbot-web/
 2. AI Model: The app uses the Hugging Face pipeline to process the question and generate a response.
 3. Response Display: The AI's answer appears in the chat window in real time.
 
-### Live Demo 
-
-```markdown
-   ## Live Demo
-   [View Live Demo](https://<your-username>.github.io/ai-chatbot-web/)
-```
+ 
+## Live Demo
+[View Live Demo](https://infinityy1001.github.io/AI-Chatbot-Teacher/)
