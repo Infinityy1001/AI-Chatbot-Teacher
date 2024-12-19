@@ -37,6 +37,19 @@ ai-chatbot-web/
 │   └── send.svg          # Icon for the send button
 ├── index.html            # Main HTML file
 ├── style.css             # Styling for the chatbot UI
-├── main2.js              # JavaScript handling the chatbot logic
+├── main.js              # JavaScript handling the chatbot logic
 └── README.md             # Project documentation
+```
+
+### How It Works
+
+1. Input Question: Users type a question in the text field and click the send button.
+2. AI Model: The app uses the Hugging Face pipeline to process the question and generate a response.
+3. Response Display: The AI's answer appears in the chat window in real time.
+
+### Live Demo 
+
+```markdown
+   ## Live Demo
+   [View Live Demo](https://<your-username>.github.io/ai-chatbot-web/)
 ```
