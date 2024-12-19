@@ -5,7 +5,7 @@ console.log("Loading model...");
 let device = 'webgpu';
 if (!navigator.gpu) {
   console.warn("WebGPU not supported. Falling back to CPU.");
-  device = 'cpu'; // Utilisation du processeur comme fallback
+  device = 'wasm'; // Utilisation du processeur comme fallback
 }
 
 const generator = await pipeline('text-generation', 'onnx-community/Llama-3.2-1B-Instruct-q4f16', {
