@@ -36,11 +36,12 @@ cd ai-chatbot-web
 ```bash
 ai-chatbot-web/
 ├── assets/
-│   └── send.svg          # Icon for the send button
-├── index.html            # Main HTML file
-├── style.css             # Styling for the chatbot UI
-├── main.js              # JavaScript handling the chatbot logic
-└── README.md             # Project documentation
+│   └── send.svg        # Icon for the send button
+│   └── chatbot.png     # Image for the demo of the page
+├── index.html          # Main HTML file
+├── style.css           # Styling for the chatbot UI
+├── main.js             # JavaScript handling the chatbot logic
+└── README.md           # Project documentation
 ```
 
 ### How It Works
