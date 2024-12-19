@@ -5,11 +5,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2a2a2a; /* Background color for the header */
+  background-color: #2a2a2a;
   padding: 10px 15px;
   border-bottom: 1px solid #444444;
 }
-
 
 .chat-title {
   font-size: 20px;
@@ -18,8 +17,6 @@
   margin: 0;
   text-align: center;
 }
-
-
 
 body {
   margin: 0;
@@ -30,14 +27,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Adjusted for responsive view */
 }
 
 /* Chat Container */
 .chat-container {
-  width: 400px;
-  max-width: 90%;
-  height: 600px;
+  width: 90%; /* Adjusted for smaller screens */
+  max-width: 400px; /* Maintains the desktop view limit */
+  height: 80vh; /* Relative height for better scaling */
+  max-height: 600px;
   background-color: #1e1e1e;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -49,7 +47,7 @@ body {
 /* Chat Window */
 #chat-window {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -70,13 +68,13 @@ body {
 
 .message.user {
   align-self: flex-end;
-  background-color: #4caf50; /* User message bubble color */
+  background-color: #4caf50;
   color: white;
 }
 
 .message.bot {
   align-self: flex-start;
-  background-color: #333333; /* Bot message bubble color */
+  background-color: #333333;
   color: white;
 }
 
@@ -158,5 +156,35 @@ body {
   to {
       opacity: 1;
       transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chat-container {
+    height: 90vh; /* Use more height on mobile */
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .chat-header {
+    padding: 10px;
+  }
+
+  .chat-title {
+    font-size: 18px; /* Slightly smaller text */
+  }
+
+  #chat-window {
+    padding: 10px; /* Reduce padding */
+  }
+
+  #user-input {
+    font-size: 14px; /* Slightly smaller input text */
+  }
+
+  #chat-form button img {
+    width: 18px; /* Smaller button icon */
+    height: 18px;
   }
 }
