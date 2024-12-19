@@ -2,6 +2,8 @@
 
 This project is a web-based chatbot application designed to answer questions related to Artificial Intelligence (AI). It uses the Hugging Face Transformers library for generating responses and leverages the WebGPU for faster processing.
 
+![Main page image](assets/chatbot.png)
+
 ## Features
 
 - Real-time Q&A about AI concepts like Machine Learning, Neural Networks, and more.
